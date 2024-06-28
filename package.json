@@ -7,6 +7,7 @@
   "workspaces": {
     "packages": [
       "packages/react-native-client",
+      "packages/react-native-client/debug",
       "examples/video-chat",
       "examples/webdriverio-test"
     ]

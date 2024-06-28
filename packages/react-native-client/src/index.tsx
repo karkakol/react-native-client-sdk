@@ -5,9 +5,7 @@ import { useEndpoints } from './hooks/useEndpoints';
 export { useAudioSettings } from './hooks/useAudioSettings';
 export { useBandwidthEstimation } from './hooks/useBandwidthEstimation';
 export { useCamera } from './hooks/useCamera';
-export { useEndpoints } from './hooks/useEndpoints';
 export { useMicrophone } from './hooks/useMicrophone';
-export { useRTCStatistics } from './hooks/useRTCStatistics';
 export { useScreencast } from './hooks/useScreencast';
 
 export {
@@ -15,10 +13,7 @@ export {
   updateEndpointMetadata,
   updateVideoTrackMetadata,
 } from './common/metadata';
-export {
-  changeWebRTCLoggingSeverity,
-  setTargetTrackEncoding,
-} from './common/webRTC';
+export { setTargetTrackEncoding } from './common/webRTC';
 export * from './common/client';
 
 export { default as VideoPreviewView } from './VideoPreviewView';
