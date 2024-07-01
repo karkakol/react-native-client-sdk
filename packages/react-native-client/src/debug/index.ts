@@ -1,4 +1,4 @@
-import RNFishjamClientModule from '../src/RNFishjamClientModule';
+import RNFishjamClientModule from '../RNFishjamClientModule';
 import { LoggingSeverity } from './types';
 
 export { useRTCStatistics } from './useRTCStatistics';

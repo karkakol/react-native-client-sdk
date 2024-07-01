@@ -3,8 +3,8 @@ import { NativeModule } from 'react-native';
 
 import { RNFishjamClient } from './RNFishjamClient.types';
 import { NativeMembraneMock } from './__mocks__/native';
+import type { RTCStats } from './debug/types';
 import { isJest } from './utils';
-import type { RTCStats } from '../debug/types';
 
 const nativeModule = isJest()
   ? NativeMembraneMock
