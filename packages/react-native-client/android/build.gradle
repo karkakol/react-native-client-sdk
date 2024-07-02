@@ -78,13 +78,10 @@ repositories {
 dependencies {
   implementation project(':expo-modules-core')
   implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${getKotlinVersion()}"
-  println "Environment Variable Value: ${System.getenv('LOCAL_LIBS')}"
-  if(System.getenv('LOCAL_LIBS') != "true"){
-    println "Using remote libs"
+  if (findProject(':android-fishjam-client-sdk')) {
+    implementation project(':android-fishjam-client-sdk')
+  } else {
     implementation "com.github.karkakol:react-native-client-sdk:6b68dac5bb74a9ec4c91b1eee624b8c0e473c214"
-  }else{
-    println "Using local libs"
-    implementation "com.fishjamdev.client:fishjam-android-client:0.0.1"
   }
   api 'com.github.davidliu:audioswitch:8edf84ee46cdbc84c2b7725aa8f8d66363e19876'
   implementation 'androidx.appcompat:appcompat:1.6.1'
